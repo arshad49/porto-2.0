@@ -140,6 +140,26 @@
         <p>&copy; 2023 Arshad. All rights reserved.</p>
     </footer>
     </section>
+    <!-- <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = $_POST['name'];
+        $lastName = $_POST['lastName'];
+        $phone = $_POST['phone'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+
+        $to = "your-email@example.com";
+        $subject = "New Contact Form Submission";
+        $body = "Name: $name\nLast Name: $lastName\nPhone: $phone\nEmail: $email\nMessage: $message";
+        $headers = "From: $email";
+
+        if (mail($to, $subject, $body, $headers)) {
+            echo "Message sent successfully!";
+        } else {
+            echo "Failed to send message.";
+        }
+    }
+    ?> -->
      
 </body>
 </html>
