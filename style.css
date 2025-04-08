@@ -68,14 +68,19 @@ body{
 
 
 
-nav ul li a{
+nav ul li a {
     color: white;
     text-decoration: none;
     padding: 20px;
     font-size: 20px;
-   
+    transition: transform 0.9s ease-out; /* Smooth transition for hover effect */
+    display: inline-block; /* Ensure transform works properly */
 }
 
+nav ul li a:hover {
+    transform: scale(1.2); /* Zoom out effect */
+
+}
 
    
 
@@ -89,6 +94,7 @@ nav ul{
     justify-content: center;
     
 }
+
 nav{
     flex: 100;
     justify-content: center;
@@ -161,10 +167,9 @@ nav{
 .bt1 , .bt2{
     background: #1A0B3B;
     color: white;
-    /* padding: 10px 20px; */
     border-radius: 5px;
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 10%;
     display: inline-block;
     font-size: 20px;
@@ -181,7 +186,7 @@ nav{
     border-style: none;
     cursor: pointer;
     display: inline-block;
-    line-height: -3px;
+    line-height: -5px;
    
 } 
 
@@ -236,7 +241,8 @@ nav{
     margin-bottom: 10%;
 }
 .about{
-    margin-top: 80px;
+    margin-top: 50px;
+    margin-right:70px ;
 }
 .sub_cont2{
     display: flex;
@@ -286,6 +292,7 @@ nav{
     border-radius: 25px;
     padding-top: 25px;
     margin-top: 28px;
+    margin-left: -60px;
    
 }
 .skill1 ,.skill2{
@@ -426,6 +433,7 @@ textarea {
     width: 200px;
     height: 50px;
     text-align: center;
+    color: #fffff;
 }
 footer {
     background-color: #1A0B3B;
@@ -449,129 +457,6 @@ footer a {
     color: #F6B1B1;
     text-decoration: none;
     margin: 0 10px;
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-    .sub_cont {
-        width: 90%;
-        height: auto;
-        padding: 20px;
-    }
-
-    .sub_cont .left {
-        padding: 10px;
-    }
-
-    .text h1 {
-        font-size: 40px;
-    }
-
-    .text h3 {
-        font-size: 30px;
-        margin-bottom: 50px;
-    }
-
-    .bt1, .bt2 {
-        width: 80%;
-        font-size: 18px;
-        padding: 15px 30px;
-    }
-
-    .line {
-        width: 80%;
-    }
-
-    .t1 {
-        font-size: 30px;
-        margin-left: 5%;
-        margin-top: 15%;
-        margin-bottom: 5%;
-    }
-
-    .para p {
-        font-size: 16px;
-        margin-left: 5%;
-        margin-right: 5%;
-        line-height: 30px;
-    }
-
-    .right_photo {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 20px;
-    }
-
-    .skills {
-        padding: 20px;
-        width: 100%;
-    }
-
-    .t2 {
-        font-size: 30px;
-        margin-left: 5px;
-    }
-
-    .sub_cont3 {
-        width: 90%;
-        height: auto;
-        padding: 20px;
-    }
-
-    .skill1, .skill2 {
-        gap: 20px;
-        margin: 20px auto;
-    }
-
-    .flex-item {
-        width: 150px;
-        height: 130px;
-    }
-
-    .Contact {
-        margin-top: 50px;
-    }
-
-    .t3, .t4 {
-        font-size: 30px;
-    }
-
-    form {
-        width: 90%;
-        height: auto;
-        padding: 20px;
-    }
-
-    .input-group, .input-group1 {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .input-field {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .input-field.full-width {
-        width: 100%;
-        margin-right: 0;
-    }
-
-    .submit {
-        margin: 20px auto;
-    }
-
-    .submit input {
-        width: 100%;
-    }
-
-    footer {
-        padding: 10px 0;
-    }
-
-    footer p {
-        font-size: 14px;
-    }
 }
 
 
